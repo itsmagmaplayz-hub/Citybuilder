@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "citybuilder",
+	"version": "${version}",
+	"name": "Citybuilder",
+	"description": "Add city blocks like roads, paths, sidewalks, and street furniture to your Minecraft world!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/citybuilder/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.imp.ctb.Citybuilder"
+		],
+		"fabric-datagen": [
+			"net.imp.ctb.CitybuilderDataGenerator"
+		]
+	},
+	"mixins": [
+		"citybuilder.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
